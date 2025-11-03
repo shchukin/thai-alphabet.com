@@ -1426,6 +1426,7 @@
         const selectedFont = $('[name="font"]:checked').val();
         if (selectedFont === 'custom') {
             $customFontInput.prop('disabled', false);
+            $customFontInput.focus();
         } else {
             $customFontInput.prop('disabled', true);
         }
