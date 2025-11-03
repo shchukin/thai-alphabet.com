@@ -1,6 +1,6 @@
 (function ($) {
 
-    var translations = {
+    const translations = {
         'site-title': {
             'english': 'Thai Alphabet',
             'russian': 'Тайский Алфавит',
@@ -1118,12 +1118,14 @@
         },
     }
 
-    var $html = $('html');
-    var $dispay = $('.display'); /* Все чекбоксы страницы */
+    const $html = $('html');
+    const $dispay = $('.display'); /* Все чекбоксы страницы */
 
 
-    var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
-    var isIOS = ['iPad', 'iPhone', 'iPod', 'iPad Simulator', 'iPhone Simulator', 'iPod Simulator'].includes(navigator.platform) || (navigator.userAgent.includes("Mac") && "ontouchend" in document); // second part is iPad on iOS 13 detection
+    /* Safari / iOS */
+
+    const isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+    const isIOS = ['iPad', 'iPhone', 'iPod', 'iPad Simulator', 'iPhone Simulator', 'iPod Simulator'].includes(navigator.platform) || (navigator.userAgent.includes("Mac") && "ontouchend" in document); // second part is iPad on iOS 13 detection
 
     function safariPlaceholder() {
         if (isSafari || isIOS) {
@@ -1136,7 +1138,7 @@
 
     /* 0. При открытии приложения нужно актуализировать все чекбоксы из Local Storage */
 
-    var appState = localStorage.getItem('display');
+    const appState = localStorage.getItem('display');
     if( appState ) {
         appState.replace('display-', '');
 
@@ -1196,8 +1198,8 @@
 
     $('.checklist .choice__widget').change(function (e) {
 
-        var isChecked = $(this).prop("checked");
-        var $checklistItem = $(this).parent('.choice').parent('.checklist__item');
+        const isChecked = $(this).prop("checked");
+        const $checklistItem = $(this).parent('.choice').parent('.checklist__item');
 
         /* Сразу чекаем всех потомков (ну или анчекаем, в общем переводим их все в тот же статус, как чекбокс на который только что кликнули) */
         $checklistItem.find('.choice__widget').prop({
@@ -1211,8 +1213,8 @@
         /* возвращаемся к алгоритму */
         function checkSiblings($checklistItem) {
 
-            var parent = $checklistItem.parent('.checklist').parent('.checklist__item'),
-                all = true;
+            const parent = $checklistItem.parent('.checklist').parent('.checklist__item');
+            let all = true;
 
             $checklistItem.siblings().each(function () {
                 let returnValue = all = ($(this).children().children('.choice__widget').prop("checked") === isChecked);
@@ -1271,9 +1273,9 @@
         $('[data-i18n]').each(function () {
 
             /* Берём оригинальный текст (английский): */
-            var i18n = $(this).data('i18n');
+            const i18n = $(this).data('i18n');
 
-            var currentLanguage;
+            let currentLanguage;
 
             if ($html.hasClass('display-language-english')) {
                 currentLanguage = 'english';
@@ -1301,7 +1303,7 @@
         $('[data-notation]').each(function() {
 
             /* Берём оригинальный текст (нотация thai.su и тоны символами): */
-            var notation = $(this).data('notation');
+            let notation = $(this).data('notation');
 
             /* И опция за опцией реплейсим в нём символы: */
 
@@ -1406,10 +1408,6 @@
 
         safariPlaceholder();
     }
-
-
-
-
 
 
 })(jQuery);
