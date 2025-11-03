@@ -85,22 +85,30 @@
             }
         }
 
-            /* cogwheel */
-            .typeface__handler::before {
+            /* icon left */
+            .typeface__handler::before,
+            .typeface__handler::after {
                 content: "";
                 position: absolute;
-                left: 0;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                margin: auto;
-                width: 30px;
-                height: 30px;
                 background-image: url("../vectors/typeface.svg");
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center center;
                 will-change: transform;
+            }
+
+            .typeface__handler::before {
+                left: 14px;
+                bottom: 14px;
+                width: 25px;
+                height: 31px;
+            }
+
+            .typeface__handler::after {
+                right: 11px;
+                bottom: 14px;
+                width: 14px;
+                height: 19px;
             }
 
         .typeface__panel {
@@ -149,12 +157,16 @@
     /* stylelint-enable */
 
     /* stylelint-disable */
-    @keyframes typeface-move {
-          0% { transform: scaleX(0); }
-         50% { transform: scaleX(-1) }
-        100% { transform: scaleX(0); }
+    @keyframes typeface-move-left {
+          0% { transform: scaleX(1); }
+         100% { transform: scaleX(-1) }
     }
-    /* stylelint-enable */
+
+    @keyframes typeface-move-right {
+          0% { transform: scaleX(1); }
+         100% { transform: scaleX(-1) }
+    }
+     /*stylelint-enable*/
 
     .typeface--expanded {
 
@@ -170,8 +182,12 @@
             }
         }
 
-            .typeface--expanded .typeface__handler::before {
-                animation: typeface-move 0.4s ease;
+            .typeface--expanded .typeface__handler:hover::before {
+                animation: typeface-move-left 0.3s ease;
+            }
+
+            .typeface--expanded .typeface__handler:hover::after {
+                animation: typeface-move-right 0.3s ease;
             }
 
         .typeface--expanded .typeface__panel {
