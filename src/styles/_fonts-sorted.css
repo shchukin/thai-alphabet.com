@@ -1,0 +1,280 @@
+@font-face {
+    font-display: swap;
+    font-family: "Anuphan";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/anuphan-v6-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Athiti";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/athiti-v14-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Bai Jamjuree";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/bai-jamjuree-v13-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Chakra Petch";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/chakra-petch-v13-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Charm";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/charm-v14-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Charmonman";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/charmonman-v20-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Chonburi";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/chonburi-v14-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Fahkwang";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/fahkwang-v18-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "IBM Plex Sans Thai";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ibm-plex-sans-thai-v11-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "IBM Plex Sans Thai Looped";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ibm-plex-sans-thai-looped-v12-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Itim";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/itim-v16-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "K2D";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/k2d-v13-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/kanit-v17-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "KoHo";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/koho-v18-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Kodchasan";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/kodchasan-v20-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Krub";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/krub-v11-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Maitree";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/maitree-v11-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Mali";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/mali-v13-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Mitr";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/mitr-v13-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Niramit";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/niramit-v12-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Noto Sans Thai";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/noto-sans-thai-v29-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Noto Sans Thai Looped";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/noto-sans-thai-looped-v16-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Noto Serif Thai";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/noto-serif-thai-v28-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Pattaya";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/pattaya-v18-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Playpen Sans Thai";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/playpen-sans-thai-v8-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Pridi";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/pridi-v15-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Prompt";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/prompt-v12-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Sarabun";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/sarabun-v17-latin_thai-regular.woff2") format("woff2");
+}
+@font-face {
+    font-display: swap;
+    font-family: "Sriracha";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/sriracha-v16-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Srisakdi";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/srisakdi-v18-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Taviraj";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/taviraj-v15-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Thasadith";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/thasadith-v13-latin_thai-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Trirong";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/trirong-v17-latin_thai-regular.woff2") format("woff2");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

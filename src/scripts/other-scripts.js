@@ -27,7 +27,7 @@
 
 
 
-    /* Settings */
+    /* Settings  Dropdown */
 
     $('.settings__handler').on('click', function (){
         $html.toggleClass('settings-expanded');
@@ -40,7 +40,7 @@
 
     /* hide settings by overlay click ( goo.gl/SJG2Hw ) */
     $(document).on('click', function(event) {
-        if (!$(event.target).closest('.settings, .cogwheel').length) {
+        if (!$(event.target).closest('.settings').length) {
             $html.removeClass('settings-expanded');
         }
     });
@@ -55,7 +55,35 @@
 
 
 
-    /* Information */
+    /* typeface Dropdown */
+
+    $('.typeface__handler').on('click', function (){
+        $html.toggleClass('typeface-expanded');
+    });
+
+    /* hide by cross click */
+    $('.typeface__close').on('click', function () {
+        $html.removeClass('typeface-expanded');
+    });
+
+    /* hide typeface by overlay click ( goo.gl/SJG2Hw ) */
+    $(document).on('click', function(event) {
+        if (!$(event.target).closest('.typeface').length) {
+            $html.removeClass('typeface-expanded');
+        }
+    });
+
+    /* hide typeface by Esc press */
+    $(document).on('keyup', function(event) {
+        if (event.keyCode === 27) {
+            $html.removeClass('typeface-expanded');
+        }
+    });
+
+
+
+
+    /* Fonts Dropdown */
 
     $('.information__handler').on('click', function (){
         $html.toggleClass('information-expanded');
@@ -68,7 +96,7 @@
 
     /* hide information by overlay click ( goo.gl/SJG2Hw ) */
     $(document).on('click', function(event) {
-        if (!$(event.target).closest('.information, .cogwheel').length) {
+        if (!$(event.target).closest('.information').length) {
             $html.removeClass('information-expanded');
         }
     });

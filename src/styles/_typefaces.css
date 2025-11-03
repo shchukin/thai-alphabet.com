@@ -1,17 +1,17 @@
-.information {
+.typefaces {
     padding: 40px 30px 0;
 }
-    .information__handler {
+    .typefaces__handler {
         display: none;
     }
 
-    .information__panel {
+    .typefaces__panel {
         will-change: transform, opacity;
     }
-        .information__body {
+        .typefaces__body {
             width: 540px; /* скроллбар уровнем выше, так что здесь всегда фикс ширина */
         }
-            .information__heading {
+            .typefaces__heading {
                 margin-top: 0;
                 margin-bottom: 32px;
                 margin-left: -2px;
@@ -19,31 +19,31 @@
 
             @media (max-device-width: 599px) {
 
-                .information__close {
+                .typefaces__close {
                     display: none !important;
                 }
             }
 
-            .information__content {
+            .typefaces__content {
 
             }
-                .information__section {
+                .typefaces__section {
                     margin-top: 30px;
                 }
 
-                .information__section:first-child {
+                .typefaces__section:first-child {
                     margin-top: 0;
                     border-top: none;
                     padding-top: 0;
                 }
 
-                    .information__sub-heading {
+                    .typefaces__sub-heading {
                         margin-top: 0;
                         margin-bottom: 16px;
                         margin-left: -1px;
                     }
 
-                    .information__summary {
+                    .typefaces__summary {
                         margin-top: 0;
                         margin-bottom: 0;
                     }
@@ -53,13 +53,13 @@
 /* device query */
 @media (min-device-width: 600px) {
 
-    .information {
+    .typefaces {
         padding: 0;
     }
-        .information__handler {
+        .typefaces__handler {
             position: fixed;
             z-index: 90;
-            right: 190px;
+            right: 110px;
             bottom: 30px;
             display: inline-block;
             vertical-align: top;
@@ -78,13 +78,13 @@
         }
 
         @media (hover: hover) {
-            .information__handler:hover {
+            .typefaces__handler:hover {
                 background-color: #EEEEEE;
             }
         }
 
             /* cogwheel */
-            .information__handler::before {
+            .typefaces__handler::before {
                 content: "";
                 position: absolute;
                 left: 0;
@@ -101,7 +101,7 @@
                 will-change: transform;
             }
 
-        .information__panel {
+        .typefaces__panel {
             position: fixed;
             z-index: 100;
             right: 30px;
@@ -113,15 +113,15 @@
             max-height: calc(100vh - 150px);
             display: none;
         }
-            .information__body {
+            .typefaces__body {
                 width: 620px;
                 padding: 30px 40px 60px;
             }
-                .information__heading {
+                .typefaces__heading {
 
                 }
 
-                .information__close {
+                .typefaces__close {
                     position: absolute !important;
                     right: 16px;
                     top: 16px;
@@ -131,7 +131,7 @@
 
     /* Если мало высоты, то позиционируем панельку поверх кнопкиы */
     @media (max-height: 600px) {
-        .information__panel {
+        .typefaces__panel {
             bottom: 30px;
             max-height: calc(100vh - 60px);
         }
@@ -140,14 +140,14 @@
 
 
     /* stylelint-disable */
-    @keyframes information-panel {
+    @keyframes typefaces-panel {
         from { opacity: 0; transform: translateY(30px); }
         to   { opacity: 1; transform: translateY(0); }
     }
     /* stylelint-enable */
 
     /* stylelint-disable */
-    @keyframes information-info {
+    @keyframes typefaces-info {
           0% { transform: rotate(0); }
          20% { transform: rotate(10deg); }
          40% { transform: rotate(-10deg); }
@@ -157,41 +157,41 @@
     }
     /* stylelint-enable */
 
-    .information-expanded {
+    .typefaces-expanded {
 
     }
-        .information-expanded .information__handler {
+        .typefaces-expanded .typefaces__handler {
             background-color: #EAEAEA;
             box-shadow: none;
         }
 
         @media (hover: hover) {
-            .information-expanded .information__handler:hover {
+            .typefaces-expanded .typefaces__handler:hover {
                 background-color: #EEEEEE;
             }
         }
 
-            .information-expanded .information__handler::before {
-                animation: information-info 0.4s ease forwards;
+            .typefaces-expanded .typefaces__handler::before {
+                animation: typefaces-info 0.4s ease forwards;
             }
 
-        .information-expanded .information__panel {
+        .typefaces-expanded .typefaces__panel {
             display: block;
-            animation: information-panel 0.4s var(--easeOutCirc) forwards;
+            animation: typefaces-panel 0.4s var(--easeOutCirc) forwards;
         }
 
     /* Чуть увеличиваем отступы вокруг панели для больших мониторов */
     @media (min-width: 1400px) {
 
-        .information {
+        .typefaces {
 
         }
-            .information__handler {
-                right: 200px;
+            .typefaces__handler {
+                right: 120px;
                 bottom: 40px;
             }
 
-            .information__panel {
+            .typefaces__panel {
                 right: 40px;
                 bottom: 140px;
                 max-height: calc(100vh - 180px);
@@ -199,7 +199,7 @@
 
             /* Если при этом ещё мало высоты, то позиционируем панельку поверх кнопкиы */
             @media (max-height: 700px) {
-                .information__panel {
+                .typefaces__panel {
                     bottom: 40px;
                     max-height: calc(100vh - 80px);
                 }
