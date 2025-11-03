@@ -1167,6 +1167,10 @@
         /* Сохраняем в Local Storage */
         localStorage.setItem('display', $html.attr('class'));
 
+        /* Если по-ходу работы приложения на тег html могут попасть какие-то другие классы (например settings-expanded), то здесь их надо сбрасывать:
+        localStorage.setItem('display', $html.attr('class').replace(' settings-expanded', '').replace('settings-expanded', ''));
+        */
+
         /* Обновляем DOM: язык, нотация */
         if( $this.attr('name') === 'language' ) { changeLanguage(); }
         if( $this.attr('name') === 'tones' )    { changeTonesNotation(); }
