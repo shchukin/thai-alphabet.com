@@ -1419,16 +1419,69 @@
     }
 
     const $fontCheckboxes = $('[name="font"]');
+    const $customFontInput = $('#custom-font');
+
+    // Управление состоянием инпута для кастомного шрифта
+    function updateCustomFontInputState() {
+        const selectedFont = $('[name="font"]:checked').val();
+        if (selectedFont === 'custom') {
+            $customFontInput.prop('disabled', false);
+        } else {
+            $customFontInput.prop('disabled', true);
+        }
+    }
+
     $fontCheckboxes.on('change', function () {
         const selectedFont = $(this).val();
-        changeThaiFont(selectedFont);
+        if (selectedFont === 'custom') {
+            // Сохраняем флаг о выборе кастомного шрифта
+            localStorage.setItem('isCustomThaiFont', 'true');
+            // Если выбран кастомный, используем значение из инпута
+            const customFontValue = $customFontInput.val().trim();
+            if (customFontValue) {
+                changeThaiFont(customFontValue);
+            }
+        } else {
+            // Сохраняем флаг о выборе стандартного шрифта
+            localStorage.setItem('isCustomThaiFont', 'false');
+            changeThaiFont(selectedFont);
+        }
+        updateCustomFontInputState();
     });
 
+    // Сохранение кастомного шрифта при вводе
+    $customFontInput.on('input', function () {
+        const selectedFont = $('[name="font"]:checked').val();
+        if (selectedFont === 'custom') {
+            const customFontValue = $(this).val().trim();
+            if (customFontValue) {
+                changeThaiFont(customFontValue);
+            }
+        }
+    });
+
+    // Восстановление сохраненного шрифта
     const savedFont = localStorage.getItem('selectedThaiFont');
+    const isCustomFont = localStorage.getItem('isCustomThaiFont') === 'true';
+    
     if (savedFont) {
-        changeThaiFont(savedFont);
-        $fontCheckboxes.prop('checked', false);
-        $('[name="font"][value="' + savedFont + '"]').prop('checked', true);
+        if (isCustomFont) {
+            // Кастомный шрифт
+            $fontCheckboxes.prop('checked', false);
+            $('[name="font"][value="custom"]').prop('checked', true);
+            $customFontInput.val(savedFont);
+            $customFontInput.prop('disabled', false);
+            changeThaiFont(savedFont);
+        } else {
+            // Стандартный шрифт
+            changeThaiFont(savedFont);
+            $fontCheckboxes.prop('checked', false);
+            $('[name="font"][value="' + savedFont + '"]').prop('checked', true);
+            $customFontInput.prop('disabled', true);
+        }
+    } else {
+        // По умолчанию инпут заблокирован
+        updateCustomFontInputState();
     }
 
 
