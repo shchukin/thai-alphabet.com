@@ -932,6 +932,10 @@
             'english': 'Fonts',
             'russian': 'Шрифты'
         },
+        'font-demo': {
+            'english': 'Font demo',
+            'russian': 'Демонстрация шрифта'
+        },
         'fonts-default-heading': {
             'english': 'Default font',
             'russian': 'Шрифт по умолчанию'
