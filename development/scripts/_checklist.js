@@ -818,8 +818,8 @@
             'russian': '<span data-notation="ˇ">ˇ</span> для <b class="consonant-middle">ср</b>'
         },
         'other-thanthakhat': {
-            'english': 'Silencing mark',
-            'russian': '<span style="font-size: 12px;">Нечитаемость буквы</span>'
+            'english': 'Silenced letter',
+            'russian': 'Нечитаемая буква'
         },
         'other-mayyamok': {
             'english': 'Word repetition',
@@ -891,10 +891,6 @@
         'example': {
             'english': 'Example',
             'russian': 'Пример'
-        },
-        'interface': {
-            'english': 'Interface',
-            'russian': 'Интерфейс'
         },
         'show-headings': {
             'english': 'Show headings',
@@ -1369,7 +1365,7 @@
                     .split('ə').join('<u>e</u>')
             }
 
-            /* commented because it is the default for letters:
+            /* default for letters:
             if( $html.hasClass('display-letters-by-thai.su') ) {
                 notation = notation;
             }
@@ -1392,7 +1388,7 @@
                         .split('ˇ').join('<sup>R</sup>')
             }
 
-            /* commented because it is the default for tones:
+            /* default for tones:
 
             if( $html.hasClass('display-tones-by-marks') ) {
                 notation = notation;
