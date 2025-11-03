@@ -29,9 +29,20 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title data-i18n="site-title">Thai Alphabet</title>
         <script>
+            // Apply saved settings as early as possible
             if(localStorage.getItem('display')) {
                 document.querySelector('html').setAttribute('class', localStorage.getItem('display'));
             }
+            // Apply saved Thai font as early as possible
+            (function() {
+                const savedFont = localStorage.getItem('selectedThaiFont');
+                const isCustom = localStorage.getItem('isCustomThaiFont') === 'true';
+                const customFont = localStorage.getItem('customThaiFont');
+                const fontToApply = isCustom ? (customFont || savedFont) : savedFont;
+                if (fontToApply) {
+                    document.documentElement.style.setProperty('--font-thai', fontToApply);
+                }
+            })();
         </script>
         <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
