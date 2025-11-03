@@ -154,6 +154,7 @@
 
 
 
+    /* stylelint-disable */
     @keyframes settings-panel {
         from { opacity: 0; transform: translateY(30px); }
         to   { opacity: 1; transform: translateY(0); }
@@ -163,6 +164,7 @@
         from { transform: rotate(0); }
         to   { transform: rotate(180deg); }
     }
+    /* stylelint-enable */
 
     .settings-expanded {
 

@@ -19,9 +19,11 @@
             margin-bottom: 0;
         }
 
+            /* stylelint-disable */
             html:not(.display-marks-digits) .marks__section--digits { display: none; }
             html:not(.display-marks-tones)  .marks__section--tones { display: none; }
             html:not(.display-marks-other)  .marks__section--other { display: none; }
+            /* stylelint-enable */
 
             .marks__sub-heading {
                 margin-top: 0;

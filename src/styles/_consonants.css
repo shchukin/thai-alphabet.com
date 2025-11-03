@@ -31,9 +31,11 @@
             margin-bottom: 0;
         }
 
+        /* stylelint-disable */
         html:not(.display-consonants-high)   .consonants__section--high   { display: none; }
         html:not(.display-consonants-middle) .consonants__section--middle { display: none; }
         html:not(.display-consonants-low)    .consonants__section--low    { display: none; }
+        /* stylelint-enable */
 
             .consonants__sub-heading {
                 margin-top: 0;
@@ -55,8 +57,10 @@
                     margin-bottom: 0;
                 }
 
+                /* stylelint-disable */
                 html:not(.display-consonants-low-sonorant) .consonants__sub-class--sonorant { display: none; }
                 html:not(.display-consonants-low-dead) .consonants__sub-class--dead         { display: none; }
+                /* stylelint-enable */
 
                     .consonants__sub-head {
                         display: flex;
@@ -283,6 +287,7 @@
     height: 1384px;
 }
 
+/* stylelint-disable */
 .display-alphabetically .letter--ko-kai       { left: 0;     top: 0; }
 .display-alphabetically .letter--kho-khai     { left: 170px; top: 0; }
 .display-alphabetically .letter--kho-khwai    { left: 340px; top: 0; }
@@ -325,7 +330,7 @@
 .display-alphabetically .letter--lo-jula      { left: 680px; top: 1092px; }
 .display-alphabetically .letter--o-ang        { left: 0;     top: 1248px; }
 .display-alphabetically .letter--ho-nokhu     { left: 170px; top: 1248px; }
-
+/* stylelint-enable */
 
 
 /* 2 */
@@ -333,6 +338,7 @@
     height: 916px;
 }
 
+/* stylelint-disable */
 .display-alphabetically:not(.display-sanskrit) .letter--ko-kai       { left: 0; top: 0; }
 .display-alphabetically:not(.display-sanskrit) .letter--kho-khai     { left: 170px; top: 0; }
 .display-alphabetically:not(.display-sanskrit) .letter--kho-khwai    { left: 340px; top: 0; }
@@ -361,3 +367,4 @@
 .display-alphabetically:not(.display-sanskrit) .letter--ho-hip       { left: 0; top: 780px; }
 .display-alphabetically:not(.display-sanskrit) .letter--o-ang        { left: 170px; top: 780px; }
 .display-alphabetically:not(.display-sanskrit) .letter--ho-nokhu     { left: 340px; top: 780px; }
+/* stylelint-enable */
