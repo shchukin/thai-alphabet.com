@@ -77,10 +77,8 @@
             transition: background-color var(--transition-hover);
         }
 
-        @media (hover: hover) {
-            .information__handler:hover {
-                background-color: #EEEEEE;
-            }
+        .information__handler:hover {
+            background-color: #EEEEEE;
         }
 
             /* cogwheel */
@@ -165,10 +163,8 @@
             box-shadow: none;
         }
 
-        @media (hover: hover) {
-            .information--expanded .information__handler:hover {
-                background-color: #EEEEEE;
-            }
+        .information--expanded .information__handler:hover {
+            background-color: #EEEEEE;
         }
 
             .information--expanded .information__handler::before {

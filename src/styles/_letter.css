@@ -14,10 +14,8 @@
     transition: background-color var(--transition-hover);
 }
 
-@media (hover: hover) {
-    .letter[data-audio]:not(.letter--not-available):hover {
-        background-color: #F6F6F6;
-    }
+.letter[data-audio]:not(.letter--not-available):hover {
+    background-color: #F6F6F6;
 }
 
     .letter__title {

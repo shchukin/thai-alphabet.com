@@ -92,10 +92,8 @@
             transition: background-color var(--transition-hover);
         }
 
-        @media (hover: hover) {
-            .settings__handler:hover {
-                background-color: #EEEEEE;
-            }
+        .settings__handler:hover {
+            background-color: #EEEEEE;
         }
 
             /* cogwheel */
@@ -174,10 +172,8 @@
             box-shadow: none;
         }
 
-        @media (hover: hover) {
-            .settings--expanded .settings__handler:hover {
-                background-color: #EEEEEE;
-            }
+        .settings--expanded .settings__handler:hover {
+            background-color: #EEEEEE;
         }
             .settings--expanded .settings__handler::before {
                 animation: settings-cogwheel 0.4s ease forwards;

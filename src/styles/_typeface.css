@@ -79,10 +79,8 @@
             transition: background-color var(--transition-hover);
         }
 
-        @media (hover: hover) {
-            .typeface__handler:hover {
-                background-color: #EEEEEE;
-            }
+        .typeface__handler:hover {
+            background-color: #EEEEEE;
         }
 
             /* icon left */
@@ -176,12 +174,9 @@
             box-shadow: none;
         }
 
-        @media (hover: hover) {
-            .typeface--expanded .typeface__handler:hover {
-                background-color: #EEEEEE;
-            }
+        .typeface--expanded .typeface__handler:hover {
+            background-color: #EEEEEE;
         }
-
             .typeface--expanded .typeface__handler:hover::before {
                 animation: typeface-move-left 0.3s ease;
             }

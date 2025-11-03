@@ -82,15 +82,12 @@
 
 
 /* Если работаем мышью, то показываем c анимациями и по таймауту */
-@media (hover: hover) {
-    .bubble-context:hover .bubble {
-        opacity: 1;
-        visibility: visible;
-        margin-bottom: 9px; /* эффект выезжания */
-        transition: opacity 0.3s ease 0.15s,
-                    visibility 0.3s ease 0.15s,
-                    margin-bottom 0.3s ease 0.15s;
-    }
+.bubble-context:hover .bubble {
+    opacity: 1;
+    visibility: visible;
+    margin-bottom: 9px; /* эффект выезжания */
+    transition: opacity 0.3s ease 0.15s,
+                visibility 0.3s ease 0.15s,
+                margin-bottom 0.3s ease 0.15s;
 }
-
 
