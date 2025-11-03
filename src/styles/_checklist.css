@@ -50,6 +50,7 @@
 .checklist--font {
     display: block;
     columns: 3;
+    gap: 24px;
 }
     .checklist--font .checklist__item {
         display: block;

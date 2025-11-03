@@ -8,6 +8,13 @@
     cursor: pointer;
 }
 
+/* In case of DOM mixing (for the sake of the DOM size) */
+.choice.checklist__item {
+    display: inline-flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
 .choice--full-width {
     width: 100%;
 }
