@@ -1,0 +1,49 @@
+.input {
+
+}
+    .input__widget {
+        vertical-align: top;
+        width: 100%;
+        height: 50px;
+        padding: 11px 22px;
+        background-color: #FFFFFF; /* reset grey background in some cases, such as <select> */
+        background-clip: padding-box; /* hack for iOS to make box-shadow works (same as border-radius in the past) */
+        border: 2px solid var(--input-border);
+        outline: none;
+        border-radius: 4px;
+        font-family: inherit;
+        font-size: 16px; /* not less than 16px (otherwise mobile browsers will zoom in on focus) */
+        line-height: 24px;
+        color: #000000;
+        opacity: 1; /* reset select:disabled default fade on iOS */
+        -webkit-tap-highlight-color: transparent;
+        transition: background-color var(--transition-hover),
+                    border-color var(--transition-hover);
+    }
+
+    .input__widget::placeholder {
+        opacity: 1; /* reset opacity drop Firefox */
+        color: var(--placeholder-color);
+    }
+
+    .input__widget:hover {
+        border-color: var(--input-border-hover-and-focus);
+    }
+
+    .input__widget:focus-visible {
+        border-color: var(--input-border-hover-and-focus);
+        box-shadow: 0 0 0 1px var(--input-border-hover-and-focus);
+        transition: none;
+    }
+
+
+/* Disabled */
+.input__widget:disabled {
+    border-color: var(--input-border);
+    background-color: var(--disabled-background);
+    color: var(--disabled-color);
+}
+
+.input__widget:disabled::placeholder {
+    color: var(--disabled-color);
+}

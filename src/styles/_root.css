@@ -30,5 +30,12 @@
     --body-color: #333333;
 
     --image-fallback: #E8E8E8;
+
+    --input-border: #B3B3B3;
+    --input-border-hover-and-focus: #7E7E7E;
+    --placeholder-color: #999999;
+    --disabled-background: #F6F6F6;
+    --disabled-color: #999999;
+    --error: #FF0033;
 }
 /* stylelint-enable declaration-colon-space-after */
