@@ -892,6 +892,10 @@
             'english': 'Example',
             'russian': 'Пример'
         },
+        'interface': {
+            'english': 'Interface',
+            'russian': 'Интерфейс'
+        },
         'show-headings': {
             'english': 'Show headings',
             'russian': 'Показывать заголовки'
