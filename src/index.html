@@ -2255,24 +2255,24 @@
                 </div>
             </section>
             <section class="typeface">
-                <button class="typeface__handler" type="button">
+                <button class="typeface__handler" type="button" data-i18n="show-fonts">
                     Show available fonts
                 </button>
                 <div class="typeface__panel">
                     <div class="typeface__body">
-                        <h2 class="typeface__heading title">
-                            Шрифт
+                        <h2 class="typeface__heading title" data-i18n="fonts-heading">
+                            Fonts
                         </h2>
                         <button class="typeface__close action action--close" type="button">
                             <span class="visuallyhidden" data-i18n="close">Close</span>
                         </button>
                         <div class="typeface__content">
                             <section class="typeface__section">
-                                <h3 class="typeface__sub-heading title title--smaller">
-                                    Шрифт по умолчанию
+                                <h3 class="typeface__sub-heading title title--smaller" data-i18n="fonts-default-heading">
+                                    Default font
                                 </h3>
-                                <div class="typeface__description">
-                                    Стандартный шрифт для проектов <a class="link link--classic" href="thai.su" target="_blank">thai.su</a>. Интерфейс приложения спроектирован под него.
+                                <div class="typeface__description" data-i18n="fonts-default-choice">
+                                    Standard font for <a class="link link--classic" href="https://thai.su" target="_blank">thai.su</a> projects. The app interface is designed based on it.
                                 </div>
                                 <ul class="checklist">
                                     <li class="checklist__item">
@@ -2285,12 +2285,11 @@
                                 </ul>
                             </section>
                             <section class="typeface__section">
-                                <h3 class="typeface__sub-heading title title--smaller">
-                                    Альтернативные шрифт
+                                <h3 class="typeface__sub-heading title title--smaller" data-i18n="alt-fonts-heading">
+                                    Alternative Fonts
                                 </h3>
-                                <div class="typeface__description">
-                                    Коллекция шрифтов <a class="link link--classic" href="https://fonts.google.com/?lang=th_Thai">Google Fonts</a> c&nbsp;поддержкой тайского языка.
-                                    О&nbsp;багах или наслоениях элементов сообщите, пожалуйста, в&nbsp;<a class="link link--classic" href="https://t.me/thaisurussian" target="_blank">телеграм&nbsp;чат</a>.
+                                <div class="typeface__description" data-i18n="google-fonts-collection">
+                                    Thai fonts from <a class="link link--classic" href="https://fonts.google.com/?lang=th_Thai" target="_blank">Google Fonts</a>. Kindly report related bugs in the <a class="link link--classic" href="https://t.me/thaisu" target="_blank">Telegram chat</a>.
                                 </div>
                                 <ul class="checklist checklist--font">
                                     <li class="checklist__item">
@@ -2520,13 +2519,13 @@
                                 </ul>
                             </section>
                             <section class="typeface__section">
-                                <h3 class="typeface__sub-heading title title--smaller">
-                                    Свой шрифт
+                                <h3 class="typeface__sub-heading title title--smaller" data-i18n="user-font-heading">
+                                    Custom font
                                 </h3>
                                 <div class="typeface__description">
-                                    <div class="wysiwyg wysiwyg--smaller">
-                                    <p>Впишите название любого шрифта (например, <em>Tahoma</em>). Шрифт должен быть установлен в операционную систему.</p>
-                                    <p>К сожалению большинство шрифтов, даже системных, не поддерживают тайский язык и возможны баги с символом <b>◌</b>.</p>
+                                    <div class="wysiwyg wysiwyg--smaller" data-i18n="user-font-description">
+                                        <p>Enter the name of any font <em>(e.g. Tahoma)</em>. The font must be installed in the operating system.</p>
+                                        <p>Unfortunately, most fonts—even system fonts—do not support the Thai language, and there may be bugs with the symbol <b>◌</b>.</p>
                                     </div>
                                 </div>
                                 <ul class="checklist">
@@ -2534,7 +2533,7 @@
                                         <label class="choice choice--full-width">
                                             <input class="choice__widget" type="radio" name="font" value="custom">
                                             <i class="choice__icon"></i>
-                                            <span class="choice__label">Свой шрифт</span>
+                                            <span class="choice__label" data-i18n="user-font-heading">Custom font</span>
                                         </label>
                                     </li>
                                 </ul>
@@ -2543,15 +2542,15 @@
                                 </div>
                             </section>
                             <div class="typeface__section">
-                                <h3 class="typeface__sub-heading title title--smaller">
-                                    Дизайнеры шрифтов
+                                <h3 class="typeface__sub-heading title title--smaller" data-i18n="fonts-designers">
+                                    Font designers
                                 </h3>
                                 <div class="definitions">
                                     <ul class="definitions__section list">
                                         <li class="list__item"><strong>Sarabun</strong> — Suppakit Chalermlarp</li>
                                         <li class="list__item"><strong>IBM Plex Sans Thai</strong> — Mike Abbink, Bold Monday
                                         <li class="list__item"><strong>Noto Sans</strong> — Google
-                                        <li class="list__item"><strong>Все остальные</strong> — Cadson Demak</li>
+                                        <li class="list__item"><strong data-i18n="all-the-others">All Other Fonts</strong> — Cadson Demak</li>
                                     </ul>
                                 </div>
                             </div>
@@ -2750,7 +2749,7 @@
                                         <a class="link" href="https://thaisu.notion.site/thai-alphabet-com-21-22-ca61bc7742f8445988a82cbf6a6a7f5d" target="_blank">Roadmap</a> &nbsp;—&nbsp; Leave a comment in an online document.
                                     </li>
                                     <li class="list__item" data-i18n="thai-su-link">
-                                        <a class="link" href="http://thai.su" target="_blank">thai.su</a> &nbsp;—&nbsp; Parent project with other tools for learning Thai.
+                                        <a class="link" href="https://thai.su" target="_blank">thai.su</a> &nbsp;—&nbsp; Parent project with other tools for learning Thai.
                                     </li>
                                 </ul>
                             </section>

@@ -924,6 +924,51 @@
             'english': 'Alphabetically',
             'russian': 'В алфавитном порядке'
         },
+        'show-fonts': {
+            'english': 'Show available fonts',
+            'russian': 'Показать доступные шрифты'
+        },
+        'fonts-heading': {
+            'english': 'Fonts',
+            'russian': 'Шрифты'
+        },
+        'fonts-default-heading': {
+            'english': 'Default font',
+            'russian': 'Шрифт по умолчанию'
+        },
+        'fonts-default-choice': {
+            'english': 'Standard font for <a class="link link--classic" href="https://thai.su" target="_blank">thai.su</a> projects. The app interface is designed based on it.',
+            'russian': 'Стандартный шрифт для проектов <a class="link link--classic" href="https://thai.su" target="_blank">thai.su</a>. Интерфейс приложения спроектирован под него.'
+        },
+        'alt-fonts-heading': {
+            'english': 'Alternative Fonts',
+            'russian': 'Альтернативные шрифты'
+        },
+        'google-fonts-collection': {
+            'english': 'Thai fonts from <a class="link link--classic" href="https://fonts.google.com/?lang=th_Thai" target="_blank">Google Fonts</a>. Kindly report related bugs in the <a class="link link--classic" href="https://t.me/thaisu" target="_blank">Telegram chat</a>.',
+            'russian': 'Коллекция тайских шрифтов с <a class="link link--classic" href="https://fonts.google.com/?lang=th_Thai" target="_blank">Google Fonts</a>. О&nbsp;багах использования, пожалуйста, сообщите в&nbsp;<a class="link link--classic" href="https://t.me/thaisurussian" target="_blank">телеграм-чат</a>.'
+        },
+        'user-font-heading': {
+            'english': 'Custom font',
+            'russian': 'Свой шрифт'
+        },
+        'user-font-description': {
+            'english': ''
+                + '<p>Enter the name of any font <em>(e.g. Tahoma)</em>. The font must be installed in the operating system.</p>'
+                + '<p>Unfortunately, most fonts—even system fonts—do not support the Thai language, and there may be bugs with the symbol <b>◌</b>.</p>'
+            ,
+            'russian': ''
+                + '<p>Впишите название любого шрифта (например, <em>Tahoma</em>). Шрифт должен быть установлен в операционную систему.</p>'
+                + '<p>К сожалению, большинство шрифтов, даже системных, не поддерживают тайский язык, и возможны баги с символом <b>◌</b>.</p>'
+        },
+        'fonts-designers': {
+            'english': 'Font designers',
+            'russian': 'Дизайнеры шрифтов'
+        },
+        'all-the-others': {
+            'english': 'All Other Fonts',
+            'russian': 'Все остальные'
+        },
         'show-about': {
             'english': 'Show about info',
             'russian': 'Показать информацию о проекте'
@@ -1041,8 +1086,8 @@
             'russian': '<a class="link" href="https://t.me/thaisurussian" target="_blank">Чат в телеграмме</a> &nbsp;—&nbsp; Сообщить об ошибке, предложить идею.'
         },
         'thai-su-link': {
-            'english': '<a class="link" href="http://thai.su" target="_blank">thai.su</a> &nbsp;—&nbsp; Parent project with other tools for learning Thai.',
-            'russian': '<a class="link" href="http://thai.su" target="_blank">thai.su</a> &nbsp;—&nbsp; Родительский проект с прочими инструментами для изучения тайского языка.'
+            'english': '<a class="link" href="https://thai.su" target="_blank">thai.su</a> &nbsp;—&nbsp; Parent project with other tools for learning Thai.',
+            'russian': '<a class="link" href="https://thai.su" target="_blank">thai.su</a> &nbsp;—&nbsp; Родительский проект с прочими инструментами для изучения тайского языка.'
         },
         'safari-bug': {
             'english': 'Bug on Apple devices',
@@ -1473,7 +1518,7 @@
     // Восстановление сохраненного шрифта
     const savedFont = localStorage.getItem('selectedThaiFont');
     const isCustomFont = localStorage.getItem('isCustomThaiFont') === 'true';
-    
+
     if (savedFont) {
         if (isCustomFont) {
             // Кастомный шрифт
