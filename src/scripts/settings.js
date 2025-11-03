@@ -1410,4 +1410,15 @@
     }
 
 
+    function changeThaiFont(font) {
+        $('html').css('--font-thai', font);
+    }
+
+    const $fontCheckboxes = $('[name="font"]');
+
+    $fontCheckboxes.on('change', function () {
+        changeThaiFont($(this).val())
+    });
+
+
 })(jQuery);
