@@ -1119,7 +1119,7 @@
     }
 
     const $html = $('html');
-    const $dispay = $('.display'); /* Все чекбоксы страницы */
+    const $display = $('.display'); /* Чекбоксы отвечающие за отображение чего либо на странице */
 
 
     /* Safari / iOS */
@@ -1142,7 +1142,7 @@
     if( appState ) {
         appState.replace('display-', '');
 
-        $dispay.each(function () {
+        $display.each(function () {
             $(this).prop("checked", appState.indexOf( $(this).val() ) > -1);
         });
 
@@ -1173,7 +1173,7 @@
     }
 
     /* Клик по чекбоксу */
-    $dispay.on('change', function () {
+    $display.on('change', function () {
         display($(this));
     });
 
@@ -1183,7 +1183,7 @@
      * поскольку .prop() не вызывает событие onChange.
      */
     function displayAll() {
-        $dispay.each(function () {
+        $display.each(function () {
             display($(this));
         });
     }
