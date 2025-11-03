@@ -166,24 +166,24 @@
     }
     /* stylelint-enable */
 
-    .settings-expanded {
+    .settings--expanded {
 
     }
-        .settings-expanded .settings__handler {
+        .settings--expanded .settings__handler {
             background-color: #EAEAEA;
             box-shadow: none;
         }
 
         @media (hover: hover) {
-            .settings-expanded .settings__handler:hover {
+            .settings--expanded .settings__handler:hover {
                 background-color: #EEEEEE;
             }
         }
-            .settings-expanded .settings__handler::before {
+            .settings--expanded .settings__handler::before {
                 animation: settings-cogwheel 0.4s ease forwards;
             }
 
-        .settings-expanded .settings__panel {
+        .settings--expanded .settings__panel {
             display: block;
             animation: settings-panel 0.4s var(--easeOutCirc) forwards;
         }

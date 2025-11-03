@@ -27,28 +27,30 @@
 
 
 
-    /* Settings  Dropdown */
+    /* Settings Dropdown */
+
+    const $settings = $('.settings');
 
     $('.settings__handler').on('click', function (){
-        $html.toggleClass('settings-expanded');
+        $html.toggleClass('settings--expanded');
     });
 
     /* hide by cross click */
     $('.settings__close').on('click', function () {
-        $html.removeClass('settings-expanded');
+        $html.removeClass('settings--expanded');
     });
 
     /* hide settings by overlay click ( goo.gl/SJG2Hw ) */
     $(document).on('click', function(event) {
         if (!$(event.target).closest('.settings').length) {
-            $html.removeClass('settings-expanded');
+            $html.removeClass('settings--expanded');
         }
     });
 
     /* hide settings by Esc press */
     $(document).on('keyup', function(event) {
         if (event.keyCode === 27) {
-            $html.removeClass('settings-expanded');
+            $html.removeClass('settings--expanded');
         }
     });
 
@@ -57,26 +59,28 @@
 
     /* typeface Dropdown */
 
+    const $typeface = $('.typeface');
+
     $('.typeface__handler').on('click', function (){
-        $html.toggleClass('typeface-expanded');
+        $typeface.toggleClass('typeface--expanded');
     });
 
     /* hide by cross click */
     $('.typeface__close').on('click', function () {
-        $html.removeClass('typeface-expanded');
+        $typeface.removeClass('typeface--expanded');
     });
 
     /* hide typeface by overlay click ( goo.gl/SJG2Hw ) */
     $(document).on('click', function(event) {
         if (!$(event.target).closest('.typeface').length) {
-            $html.removeClass('typeface-expanded');
+            $typeface.removeClass('typeface--expanded');
         }
     });
 
     /* hide typeface by Esc press */
     $(document).on('keyup', function(event) {
         if (event.keyCode === 27) {
-            $html.removeClass('typeface-expanded');
+            $typeface.removeClass('typeface--expanded');
         }
     });
 
@@ -85,26 +89,29 @@
 
     /* Fonts Dropdown */
 
+    const $information = $('.information');
+
+
     $('.information__handler').on('click', function (){
-        $html.toggleClass('information-expanded');
+        $information.toggleClass('information--expanded');
     });
 
     /* hide by cross click */
     $('.information__close').on('click', function () {
-        $html.removeClass('information-expanded');
+        $information.removeClass('information--expanded');
     });
 
     /* hide information by overlay click ( goo.gl/SJG2Hw ) */
     $(document).on('click', function(event) {
         if (!$(event.target).closest('.information').length) {
-            $html.removeClass('information-expanded');
+            $information.removeClass('information--expanded');
         }
     });
 
     /* hide information by Esc press */
     $(document).on('keyup', function(event) {
         if (event.keyCode === 27) {
-            $html.removeClass('information-expanded');
+            $information.removeClass('information--expanded');
         }
     });
 

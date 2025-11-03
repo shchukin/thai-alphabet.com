@@ -157,25 +157,25 @@
     }
     /* stylelint-enable */
 
-    .information-expanded {
+    .information--expanded {
 
     }
-        .information-expanded .information__handler {
+        .information--expanded .information__handler {
             background-color: #EAEAEA;
             box-shadow: none;
         }
 
         @media (hover: hover) {
-            .information-expanded .information__handler:hover {
+            .information--expanded .information__handler:hover {
                 background-color: #EEEEEE;
             }
         }
 
-            .information-expanded .information__handler::before {
+            .information--expanded .information__handler::before {
                 animation: information-info 0.4s ease forwards;
             }
 
-        .information-expanded .information__panel {
+        .information--expanded .information__panel {
             display: block;
             animation: information-panel 0.4s var(--easeOutCirc) forwards;
         }

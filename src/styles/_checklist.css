@@ -44,3 +44,13 @@
     .checklist--letters > .checklist__item {
         padding-right: 40px;
     }
+
+
+
+.checklist--font {
+    display: block;
+    columns: 3;
+}
+    .checklist--font .checklist__item {
+        display: block;
+    }

@@ -1165,7 +1165,7 @@
         }
 
         /* Сохраняем в Local Storage */
-        localStorage.setItem('display', $html.attr('class').replace(' settings-expanded', '').replace('settings-expanded', ''));
+        localStorage.setItem('display', $html.attr('class'));
 
         /* Обновляем DOM: язык, нотация */
         if( $this.attr('name') === 'language' ) { changeLanguage(); }
