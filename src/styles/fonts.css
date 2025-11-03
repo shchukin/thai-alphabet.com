@@ -216,13 +216,6 @@
 
 @font-face {
     font-display: swap;
-    font-family: "Sarabun";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/sarabun-v17-latin_thai-regular.woff2") format("woff2");
-}
-@font-face {
-    font-display: swap;
     font-family: "Sriracha";
     font-style: normal;
     font-weight: 400;

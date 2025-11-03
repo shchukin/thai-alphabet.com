@@ -43,9 +43,11 @@
                         margin-left: -1px;
                     }
 
-                    .typeface__summary {
-                        margin-top: 0;
-                        margin-bottom: 0;
+                    .typeface__description {
+                        margin-top: -8px;
+                        margin-bottom: 8px;
+                        font-size: var(--body-font);
+                        line-height: var(--body-line);
                     }
 
 
