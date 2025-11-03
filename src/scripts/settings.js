@@ -1410,15 +1410,26 @@
     }
 
 
+
+    /* Шрифты */
+
     function changeThaiFont(font) {
         $('html').css('--font-thai', font);
+        localStorage.setItem('selectedThaiFont', font);
     }
 
     const $fontCheckboxes = $('[name="font"]');
-
     $fontCheckboxes.on('change', function () {
-        changeThaiFont($(this).val())
+        const selectedFont = $(this).val();
+        changeThaiFont(selectedFont);
     });
+
+    const savedFont = localStorage.getItem('selectedThaiFont');
+    if (savedFont) {
+        changeThaiFont(savedFont);
+        $fontCheckboxes.prop('checked', false);
+        $('[name="font"][value="' + savedFont + '"]').prop('checked', true);
+    }
 
 
 })(jQuery);
