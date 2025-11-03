@@ -1425,6 +1425,10 @@
     const $fontCheckboxes = $('[name="font"]');
     const $customFontInput = $('#custom-font');
 
+    // Постоянное хранение значения кастомного шрифта
+    const savedCustomFont = localStorage.getItem('customThaiFont') || '';
+    $customFontInput.val(savedCustomFont);
+
     // Управление состоянием инпута для кастомного шрифта
     function updateCustomFontInputState() {
         const selectedFont = $('[name="font"]:checked').val();
@@ -1442,10 +1446,13 @@
             // Сохраняем флаг о выборе кастомного шрифта
             localStorage.setItem('isCustomThaiFont', 'true');
             // Если выбран кастомный, используем значение из инпута
-            const customFontValue = $customFontInput.val().trim();
-            if (customFontValue) {
-                changeThaiFont(customFontValue);
+            let customFontValue = $customFontInput.val().trim();
+            if (!customFontValue && savedCustomFont) {
+                // Подставляем ранее сохранённый кастомный шрифт, если инпут пустой
+                customFontValue = savedCustomFont;
+                $customFontInput.val(savedCustomFont);
             }
+            if (customFontValue) { changeThaiFont(customFontValue); }
         } else {
             // Сохраняем флаг о выборе стандартного шрифта
             localStorage.setItem('isCustomThaiFont', 'false');
@@ -1457,12 +1464,10 @@
     // Сохранение кастомного шрифта при вводе
     $customFontInput.on('input', function () {
         const selectedFont = $('[name="font"]:checked').val();
-        if (selectedFont === 'custom') {
-            const customFontValue = $(this).val().trim();
-            if (customFontValue) {
-                changeThaiFont(customFontValue);
-            }
-        }
+        const customFontValue = $(this).val().trim();
+        // Всегда сохраняем введённое значение в отдельный ключ
+        localStorage.setItem('customThaiFont', customFontValue);
+        if (selectedFont === 'custom' && customFontValue) { changeThaiFont(customFontValue); }
     });
 
     // Восстановление сохраненного шрифта
@@ -1474,9 +1479,10 @@
             // Кастомный шрифт
             $fontCheckboxes.prop('checked', false);
             $('[name="font"][value="custom"]').prop('checked', true);
-            $customFontInput.val(savedFont);
+            // Восстанавливаем инпут из постоянного хранилища, приоритетнее savedFont
+            $customFontInput.val(savedCustomFont || savedFont);
             $customFontInput.prop('disabled', false);
-            changeThaiFont(savedFont);
+            changeThaiFont(savedCustomFont || savedFont);
         } else {
             // Стандартный шрифт
             changeThaiFont(savedFont);
