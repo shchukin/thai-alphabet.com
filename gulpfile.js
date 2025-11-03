@@ -151,6 +151,23 @@ gulp.task('styles', function () {
 });
 
 
+
+// Fonts: inject all fonts into one file
+
+gulp.task('fonts', function () {
+
+    return gulp.src('src/styles/fonts.css', {encoding: false})
+        .pipe(plumber())
+        .pipe(base64({
+            maxImageSize: 200 * 1024, // 200KB threshold
+            exclude: ['/sprite/', '/images/'] // Allow files from /vectors/ only
+        }))
+        .pipe(gulp.dest('build/styles/'))
+        .pipe(size())
+        ;
+});
+
+
 // lint
 
 gulp.task('lint', function () {
@@ -170,7 +187,7 @@ gulp.task('lint', function () {
 
 
 gulp.task('default', function (fn) {
-    run('clean', 'manifest', 'favicon', 'temp', 'content', 'images', 'layouts', 'vendors', 'scripts', 'styles', 'lint', fn);
+    run('clean', 'manifest', 'favicon', 'temp', 'content', 'images', 'layouts', 'vendors', 'scripts', 'styles', 'fonts', 'lint', fn);
 });
 
 
