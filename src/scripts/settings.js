@@ -1070,8 +1070,8 @@
             'russian': '<strong>Разработка:&nbsp;</strong> Щукин Антон (<a class="link" href="https://t.me/cypher" target="_blank">Телеграм</a>)'
         },
         'voiced-by': {
-            'english': '<strong>Voiced by:&nbsp;</strong> Masha Muay (<a class="link" href="https://www.instagram.com/muaymasha" target="_blank">Instagram</a>)',
-            'russian': '<strong>Озвучено:&nbsp;</strong> Муай Маша (<a class="link" href="https://www.instagram.com/muaymasha" target="_blank">Инстаграм</a>)'
+            'english': '<strong>Voiced by:&nbsp;</strong> Masha Muay (<a class="link" href="https://t.me/muaymasha" target="_blank">Telegram</a>)',
+            'russian': '<strong>Озвучено:&nbsp;</strong> Муай Маша (<a class="link" href="https://t.me/muaymasha" target="_blank">Телеграм</a>)'
         },
         'special-thanks': {
             'english': '<strong>Special thanks to:&nbsp;</strong> Maria, Olga, <span class="nobr">Anton&nbsp;Kochenkov (<a class="link" href="https://t.me/a_kochenkov" target="_blank">Telegram</a>)</span>, <span class="nobr">Angelina&nbsp;Masserovna (<a class="link" href="https://t.me/masserovna" target="_blank">Telegram</a>)</span>, <span class="nobr">Alexandra&nbsp;Antukh (<a class="link" href="https://t.me/alealexal" target="_blank">Telegram</a>)</span>, Evgenii&nbsp;Prokopiev, Roman',
@@ -1154,8 +1154,8 @@
             'russian': 'Друзья',
         },
         'ruthai': {
-            'english': '<strong>RuThai</strong> &nbsp;—&nbsp; Thai language online school for Russian speakers',
-            'russian': '<strong>RuThai</strong> &nbsp;—&nbsp; Онлайн-школа тайского языка: <a class="link" href="https://www.instagram.com/ruthai_org" target="_blank">Инстаграм</a>, <a class="link" href="https://www.youtube.com/@ruthai_org" target="_blank">Ютуб</a>',
+            'english': '<strong>RuThai</strong> &nbsp;—&nbsp; Thai language online school for Russian speakers: <a class="link" href="https://t.me/ruthai_org" target="_blank">Telegram</a>, <a class="link" href="https://www.youtube.com/@ruthai_org" target="_blank">YouTube</a>',
+            'russian': '<strong>RuThai</strong> &nbsp;—&nbsp; Онлайн-школа тайского языка: <a class="link" href="https://t.me/ruthai_org" target="_blank">Телеграм</a>, <a class="link" href="https://www.youtube.com/@ruthai_org" target="_blank">Ютуб</a>',
         },
         'info-other': {
             'english': 'Other',
