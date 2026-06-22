@@ -1165,6 +1165,10 @@
             'english': 'Some translations are taken from the <a class="link" href="http://thai-language.com">thai-language.com</a>',
             'russian': 'Некоторые переводы взяты с <a class="link" href="http://thai-language.com">thai-language.com</a>',
         },
+        'hosting': {
+            'english': 'I am moving the app to another hosting provider. There will be issues for a couple of days. Please save the backup link:',
+            'russian': 'Переношу приложение к&nbsp;другому хостинг-провайдеру. Скорее всего будут перебои в&nbsp;течении пары дней. Прошу сохранить альтернативную ссылку:',
+        },
     }
 
     const $html = $('html');

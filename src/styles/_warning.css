@@ -1,0 +1,16 @@
+.warning {
+    padding: 4px 20px 6px;
+    background-color: #e8f5e9;
+    font-size: 15px;
+    line-height: 20px;
+    color: #1b5e20;
+    text-align: center;
+}
+
+@media (max-device-width: 599px) {
+    .warning {
+        padding: 8px 20px 10px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
