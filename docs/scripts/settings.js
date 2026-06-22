@@ -1166,8 +1166,8 @@
             'russian': 'Некоторые переводы взяты с <a class="link" href="http://thai-language.com">thai-language.com</a>',
         },
         'hosting': {
-            'english': 'I am moving the app to another hosting provider. There will be issues for a couple of days. Please save the backup link:',
-            'russian': 'Переношу приложение к&nbsp;другому хостинг-провайдеру. Скорее всего будут перебои в&nbsp;течении пары дней. Прошу сохранить альтернативную ссылку:',
+            'english': 'I have successfully moved the app to a new hosting provider. Everything should be working fine now. Sorry for the downtime over the last few days!',
+            'russian': 'Приложение успешно переехало на новый хостинг, теперь всё работает штатно. Простите, что сервис был недоступен последние несколько дней!',
         },
     }
 
